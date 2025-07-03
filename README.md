@@ -11,6 +11,9 @@ We provide an EMD implementation for point cloud comparison, which only needs $O
 ### Compile
 Run `python3 setup.py install` to compile.
 
+**Notice:**
+You should install the right version pytorch with CUDA.
+
 ### Example
 See `test/test_EMDModule.py` for examples.
 
