@@ -31,8 +31,8 @@ setup(
     entry_points={},
     ext_modules=[
         CUDAExtension('emd', [
-            'emd.cpp',
-            'emd_cuda.cu',
+            'EMD_module/emd.cpp',
+            'EMD_module/emd_cuda.cu',
         ]),
     ],
     cmdclass={
