@@ -26,7 +26,7 @@ setup(
     keywords='EMD_module',
     include_package_data=True,
     zip_safe=False,
-    packages=['.'],
+    packages=['EMD_module'],
     install_requires=[],
     entry_points={},
     ext_modules=[

@@ -10,7 +10,7 @@ import time
 import numpy as np
 import torch
 
-from emd_module import EMDModule
+from EMD_module.emd_module import EMDModule
 # from EMD_module.emd_module import EMDModule
 
 
