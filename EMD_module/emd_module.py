@@ -27,7 +27,6 @@ import emd
 
 class EMDFunction(Function):
     @staticmethod
-    @torch.compile
     def forward(ctx, xyz1, xyz2, eps, iters):
         batchsize, n, _ = xyz1.size()
         _, m, _ = xyz2.size()
@@ -75,7 +74,6 @@ class EMDModule(nn.Module):
         super(EMDModule, self).__init__()
 
     @staticmethod
-    @torch.compile
     def forward(input1, input2, eps, iters):
         return EMDFunction.apply(input1, input2, eps, iters)
 
